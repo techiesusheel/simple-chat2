@@ -37,3 +37,8 @@ wss.on("connection", (ws, req) => {
 server.listen(3001, () => {
   console.log("✅ Chat server running at http://localhost:3001");
 });
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Chat server running at http://localhost:${PORT}`);
+});
+
